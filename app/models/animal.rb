@@ -32,5 +32,4 @@ class Animal
     def self.find_by_shelter(shelter_name)
         self.find_all_in_shelter.select{|animal| animal.shelter.name == shelter_name}
     end
-
 end
